@@ -1,0 +1,10 @@
+{
+  'extends': 'airbnb',
+  'rules': {
+    'react/prefer-es6-class': [2, 'never'],
+    'react/jsx-no-bind': [2, { 'ignoreRefs': true }],
+    'no-multiple-empty-lines': 0,
+    'no-use-before-define': 0
+  }
+}
+
