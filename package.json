@@ -2,9 +2,6 @@
   "author": "Fixate",
   "version": "0.0.0",
   "name": "project-name",
-  "scripts": {
-    "postinstall": "node setup.js && bower install"
-  },
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-eslint": "^5.0.0-beta6",
@@ -19,6 +16,7 @@
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^4.0.0",
     "eslint-plugin-react": "^3.16.1",
+    "expose-loader": "^0.7.1",
     "extend": "~3.0.0",
     "gulp": "~3.9.0",
     "gulp-autoprefixer": "^3.1.0",
@@ -54,6 +52,9 @@
   "dependencies": {
     "classname": "0.0.0",
     "lodash": "^4.6.1",
+    "p2": "^0.7.1",
+    "phaser": "^2.4.6",
+    "pixi": "^0.3.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   }

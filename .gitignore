@@ -8,10 +8,9 @@ config.rb
 # Node
 node_modules
 npm-debug.log
-gulp/secrets.coffee
 
 # Webpack
 .happypack
 
-# Fabricator Symlinked Assets
-styleguide/src/assets/toolkit/assets
+dist/**/*
+!dist/.gitkeep

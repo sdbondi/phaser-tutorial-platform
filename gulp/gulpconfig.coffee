@@ -1,22 +1,22 @@
-assets = "src/assets"
+source = "src"
+assets = "#{source}/assets"
+dest = "dist"
 
 module.exports =
   path:
-    db_backup: "database"
     dev:
-      assets: "#{assets}"
-      css:    "#{assets}/css"
-      js:     "#{assets}/js"
-      img:    "#{assets}/img"
-      fnt:    "#{assets}/fnt"
-      scss:   "#{assets}/css/scss"
-      coffee: "#{assets}/js/coffee"
-    prod:
-      assets: "#{assets}/public"
-      css:    "#{assets}/public/css"
-      fnt:    "#{assets}/public/fnt"
-      img:    "#{assets}/public/img"
-      js:     "#{assets}/public/js"
+      base:   source
+      assets: "#{source}/assets"
+      css:    "#{source}/css"
+      js:     "#{source}/js"
+      img:    "#{source}/img"
+      fnt:    "#{source}/fnt"
+      scss:   "#{source}/css/scss"
+      coffee: "#{source}/js/coffee"
+    dest:
+      base: dest
+      js: "#{dest}/js"
+      assets: "#{dest}/assets"
 
   plumber:
     errorHandler: false
@@ -28,7 +28,7 @@ module.exports =
 
   revReplace:
     opts:
-      "replaceInExtensions": [
+      replaceInExtensions: [
         ".js"
         ".css"
       ]

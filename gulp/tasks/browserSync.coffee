@@ -5,7 +5,8 @@ gulp.task 'browser-sync', () ->
     injectchanges: true
     open: false
     notify: false
-    # tunnel: true
+    server:
+      baseDir: './dist'
   }
 
 gulp.task 'bs-reload', () ->
